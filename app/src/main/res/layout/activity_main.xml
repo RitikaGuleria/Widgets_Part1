@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:hint="Enter first number"
+        android:inputType="number"
+        android:paddingTop="1dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et1"
+        android:layout_marginTop="2dp"
+        android:hint="Enter second number"
+        android:layout_margin="1dp"
+        ></EditText>
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et2"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="1dp"
+        android:text="Click to get the sum of two enter numbers"></Button>
+
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt1"
+        android:layout_centerHorizontal="true"
+        android:hint="Answer is"
+        android:padding="1dp"
+
+        ></EditText>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="Checkboxes are used below:"
+        android:textSize="14dp">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="Kotlin"
+        android:layout_centerHorizontal="true"
+        >
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb1"
+        android:layout_centerHorizontal="true"
+        android:text="Java">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb2"
+        android:text="Flutter"
+        android:layout_centerHorizontal="true"
+        >
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb3"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="1dp"
+        android:text="Click to check how many checkboxes have been selected"></Button>
+
+    <Button
+
+        android:id="@+id/extbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/bt2"
+        android:layout_centerHorizontal="true"
+        android:text="Exit "
+        >
+    </Button>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/extbtn"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="1dp"
+        android:text="RadioButtons are used below:"
+        android:textSize="14dp">
+
+    </TextView>
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:text="Male"
+        >
+    </RadioButton>
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb1"
+        android:layout_centerHorizontal="true"
+        android:text="Female"
+        >
+    </RadioButton>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb2"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="1dp"
+        android:text="Toggle is used below:"
+        android:textSize="14dp">
+
+    </TextView>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"></ToggleButton>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/toggleButton"
+        android:layout_centerHorizontal="true"
+        >
+    </ImageView>
+
+
+
+
+</RelativeLayout>
